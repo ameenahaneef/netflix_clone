@@ -15,14 +15,14 @@ class Movie {
     required this.releaseDate,
   });
 
-  factory Movie.fromJson(Map<String, dynamic> json) {
+  factory Movie.fromJson(Map<String,dynamic> json){
     return Movie(
-      title: json["title"] ?? '',
-      backDropPath: json["backdrop_Path"] ?? '',
-      originalTitle: json["original_title"] ?? '',
-      overview: json["overview"] ?? '',
-      posterPath: json["poster_path"] ?? '',
-      releaseDate: json["release_date"] ?? '',
-    );
+      title: json["title"]??'', 
+      backDropPath:json[ "backdrop_Path"]??'', 
+      originalTitle: json["original_title"]??'', 
+      overview: json["overview"]??'', 
+      posterPath: json["poster_path"]??'', 
+      releaseDate: json["release_date"]??'',
+      );
   }
 }
